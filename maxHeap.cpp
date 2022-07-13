@@ -5,8 +5,8 @@ using namespace std;
 class maxHeap
 {
 private:
-    int heapSize = 0;
-    vector<int> heap{-1};
+    int heapSize;
+    vector<int> heap;
 
     int parentIndex(int i)
     {
@@ -53,6 +53,11 @@ private:
     }
 
 public:
+    maxHeap()
+    {
+        this->heapSize=0;
+        this->heap.push_back(-1);
+    }
     bool empty()
     {
         return heapSize == 0;
