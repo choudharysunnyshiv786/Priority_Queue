@@ -18,7 +18,7 @@ private:
     }
     int rightChildIndex(int i)
     {
-        return (1 << i) + 1;
+        return (i << 1) + 1;
     }
 
     void heapifyUp(int i)
